@@ -41,8 +41,9 @@ streamlit run streamlit_app.py
 uvicorn main:app --reload --port 8000
 Acknowledgements
 
+# Acknowledgements
 Built while following along with Krish Naik's YouTube tutorial series, then adapted/extended as a personal project.
 
-Status
+# Status
 
-Work in progress
+Work in progress - Open for Public to commit
