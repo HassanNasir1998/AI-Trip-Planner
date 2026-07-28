@@ -14,12 +14,12 @@ A simple web interface so the planner is usable by non-technical end users, not 
 This project is part of an ongoing personal portfolio of AI/ML and agentic AI projects, focused on applying LLM agents to practical, everyday use cases.
 
 # How It Works:
-User Input :— The user provides trip details (e.g. destination, dates, interests) through the Streamlit app (streamlit_app.py).
-Agent Pipeline :— The request is passed to the agent (agent/), which uses prompt templates from prompt_library/ to reason about the request and, where needed, invoke tools (tools/) to gather supporting information.
-Configuration & Utilities :— App-wide settings live in config/, with shared helper functions in utils/.
-Logging & Error Handling :— logger/ and exception/ provide structured logging and centralized error handling across the app.
-API Layer :— main.py exposes the planner as a FastAPI service (run via uvicorn main:app), allowing the agent to be used programmatically as well as through the Streamlit UI.
-Output :— The agent returns a generated itinerary/plan, which is displayed back to the user through the Streamlit interface.
+User Input :- The user provides trip details (e.g. destination, dates, interests) through the Streamlit app (streamlit_app.py).
+Agent Pipeline :- The request is passed to the agent (agent/), which uses prompt templates from prompt_library/ to reason about the request and, where needed, invoke tools (tools/) to gather supporting information.
+Configuration & Utilities :- App-wide settings live in config/, with shared helper functions in utils/.
+Logging & Error Handling :- logger/ and exception/ provide structured logging and centralized error handling across the app.
+API Layer :- main.py exposes the planner as a FastAPI service (run via uvicorn main:app), allowing the agent to be used programmatically as well as through the Streamlit UI.
+Output :- The agent returns a generated itinerary/plan, which is displayed back to the user through the Streamlit interface.
 
 # Tech Stack
 
